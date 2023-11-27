@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>PLEASE GIVE FEEDBACK</h2>
+
+        <div class="stars">
+            <input type="radio" name="rating" id="star5" value="5" class="space">
+            <label for="star5"></label>
+            <input type="radio" name="rating" id="star4" value="4" class="space">
+            <label for="star4"></label>
+            <input type="radio" name="rating" id="star3" value="3" class="space">
+            <label for="star3"></label>
+            <input type="radio" name="rating" id="star2" value="2" class="space">
+            <label for="star2"></label>
+            <input type="radio" name="rating" id="star1" value="1" class="space">
+            <label for="star1"></label>
+        </div>
+    
+        <div class="input-box">
+            <input id="username" type="text" placeholder="enter your name">
+        </div>
+        <textarea id="userreview" cols="30" rows="5" placeholder="Enter your openion here..." id="textarea"></textarea>
+        <div class="button-btns">
+            <button class="cancel" id="cancel" onclick="cancel()">cancel</button>
+            <button type="submit" class="submit" id="submit" onclick="addreview()">Submit</button>
+        </div>
+    </div>
+    <div class="storage">
+        <div id="user"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

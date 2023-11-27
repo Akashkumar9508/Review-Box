@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items:center;
+    background-color: #f2eeee;
+}
+.container{
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+   background-color: #ffffff;
+   border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.container h2{
+    margin-top: 20px;
+    color:rgb(0, 191, 255); 
+    font-size: 2rem;
+}
+/* .star{
+    margin-top:10px;
+    display: flex;
+    gap: 25px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.star i{
+    color: #ffbd13;
+} */
+.stars {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.stars .space{
+    margin-left: 10px;
+}
+
+.stars input[type="radio"] {
+    display: none;
+}
+
+.stars label {
+    font-size: 30px;
+    color: #ffbd13;
+    cursor: pointer;
+}
+
+.stars label:before {
+    content: '\2605';
+    /* Unicode character for a star */
+    display: block;
+
+}
+
+.stars input[type="radio"]:checked~label {
+    color: rgb(242, 242, 169);
+}
+
+.container .input-box{
+    height: 40px ;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.input-box input{
+    width: 90%;
+    height: 90%;
+    outline: none;
+    border: none;
+    padding: 10px 10px;
+    background-color: #f2eeee;
+    border-radius: 7px;
+}
+.container  textarea{
+    width: 90%;
+    height: 150px;
+    resize: none;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+    background-color: #f2eeee;
+    border-radius: 7px;
+    border: none;
+    outline:none;
+
+}
+textarea::placeholder{
+    color:rgb(92, 89, 89);
+    font-size: 0.8rem ;
+}
+.button-btns{
+    width: 100%;
+    height:40px ;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 30px;
+    margin-top:20px;
+    gap: 12px;
+}
+.button-btns button ,.button-btns .submit{
+    height: 30px;
+    width: 100px;
+    border:none;
+    outline:none;
+    font-size: 1rem;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: rgb(0, 191, 255);
+    color: #ffffff;
+    transition: .4s;
+}
+.button-btns button ,.button-btns .cancel{
+    background-color: #fff;
+    color:  rgb(7, 155, 205);
+}
+.button-btns button ,.button-btns .submit:hover{
+    background-color: rgb(2, 150, 200);
+    cursor: pointer;
+}
+.button-btns button ,.button-btns .cancel:hover{
+    background-color: rgb(225, 225, 225);
+    cursor: pointer;
+}
+.storage{
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 20px;
+
+}
+#user{
+    width: 100%;
+    background-color: #e8e6e6;
+    border-radius:7px ; 
+}
+#user h4{
+    font-size: 1.2rem;
+    position: relative;
+    color: red;
+    padding: 7px 10px 0 10px;
+}
+#user p{
+    font-size: 1rem;
+    color: blue;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    padding: 3px 10px;
+
+}
+
